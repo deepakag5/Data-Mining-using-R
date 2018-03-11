@@ -187,7 +187,7 @@ linregpval <- function (modelobject) {
   return(pval)
 }
 
-# display the p-value
+# display the p-value of linear regression
 
 format(linregpval(fit),scientific = F)
 
