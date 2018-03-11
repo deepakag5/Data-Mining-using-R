@@ -2,7 +2,7 @@
 ### Author: Deepak Agarwal
 
 ## Health care data 
-## Data Source https://data.medicare.gov/data/physician-compare
+## Data Source - https://data.medicare.gov/data/physician-compare
 
 # load the library
 library(dplyr)
@@ -89,6 +89,8 @@ practitioner_atleast10_measures <- performance_data %>%
                                           group_by(PAC.ID) %>% 
                                               summarise(perf_measures=n()) %>% 
                                                         filter(perf_measures>=10)
+
+head(practitioner_atleast10_measures)
 
 # subset performance data for practitioners who have at least 10 performance measures
 
